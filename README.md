@@ -3,7 +3,9 @@
 ### 1. Create virtual environment and install packages
 Windows
 ```shell
-python -m venv venv && venv\bin\activate && pip install -r requirements.txt
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
 ```
 
 Linux/Mac
@@ -11,7 +13,7 @@ Linux/Mac
 python3 -m venv venv && source venv/bin/activate && pip3 install -r requirements.txt
 ```
 
-### 2. Create .env file and copy all variables from .env_example to it and customize your self (if needed)
+### 2. Create .env file and copy the variables from .env_example into it, then set your own values. Never commit your real .env file or publish bot tokens.
 
 ### 3. Run app.py
 Windows
@@ -32,7 +34,7 @@ sudo apt install -y postgresql postgresql-contrib
 
 ### 2. Log in to the postgresql shell
 ```shell
-sudo -u postres psql
+sudo -u postgres psql
 ```
 
 ### 3. Create a database (in postgresql shell)
